@@ -27,7 +27,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
         </div>
       )}
       
-      <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal text-[#F8F8F6] tracking-tight leading-[1.15] max-w-4xl">
+      <h2 className="font-serif text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-normal text-[#F8F8F6] tracking-tight leading-[1.15] max-w-4xl">
         {title}
       </h2>
 

@@ -61,7 +61,7 @@ export const ExteriorCarouselSection: React.FC = () => {
 
         {/* Main Interactive Carousel Display */}
         <div 
-          className="relative w-full h-[400px] sm:h-[500px] lg:h-[620px] bg-[#090C11] border border-[#C79A58]/40 shadow-2xl overflow-hidden group"
+          className="relative w-full h-[300px] sm:h-[460px] lg:h-[600px] bg-[#090C11] border border-[#C79A58]/40 shadow-2xl overflow-hidden group"
           onMouseEnter={() => setIsAutoPlay(false)}
           onMouseLeave={() => setIsAutoPlay(true)}
         >
@@ -79,13 +79,13 @@ export const ExteriorCarouselSection: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-[#090C11]/50 via-transparent to-transparent opacity-40"></div>
 
           {/* Top Floating Counter Badge */}
-          <div className="absolute top-6 left-6 bg-[#090C11]/90 backdrop-blur-md border border-[#C79A58]/40 px-4 py-2 flex items-center gap-3 text-xs text-[#F8F8F6]">
+          <div className="absolute top-3 left-3 sm:top-6 sm:left-6 bg-[#090C11]/90 backdrop-blur-md border border-[#C79A58]/40 px-3 py-1.5 sm:px-4 sm:py-2 flex items-center gap-2 sm:gap-3 text-xs text-[#F8F8F6]">
             <span className="w-2 h-2 rounded-full bg-[#C79A58] animate-pulse"></span>
-            <span className="font-serif text-sm font-normal text-[#C79A58]">
+            <span className="font-serif text-xs sm:text-sm font-normal text-[#C79A58]">
               Image {currentIndex + 1} of {images.length}
             </span>
-            <span className="text-[#AEB4BD]/60">|</span>
-            <span className="text-[10px] uppercase tracking-widest text-[#AEB4BD]">
+            <span className="text-[#AEB4BD]/60 hidden sm:inline">|</span>
+            <span className="text-[9px] sm:text-[10px] uppercase tracking-widest text-[#AEB4BD] hidden sm:inline">
               Real Project Showcase
             </span>
           </div>
@@ -94,32 +94,32 @@ export const ExteriorCarouselSection: React.FC = () => {
           <button
             onClick={handlePrev}
             aria-label="Previous Carousel Image"
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-[#090C11]/80 hover:bg-[#C79A58] text-[#F8F8F6] hover:text-[#090C11] border border-white/20 hover:border-[#C79A58] flex items-center justify-center transition-all duration-300 shadow-xl focus:outline-none"
+            className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-[#090C11]/80 hover:bg-[#C79A58] text-[#F8F8F6] hover:text-[#090C11] border border-white/20 hover:border-[#C79A58] flex items-center justify-center transition-all duration-300 shadow-xl focus:outline-none"
           >
-            <i className="bi bi-chevron-left text-xl"></i>
+            <i className="bi bi-chevron-left text-lg sm:text-xl"></i>
           </button>
 
           {/* Carousel Next Button */}
           <button
             onClick={handleNext}
             aria-label="Next Carousel Image"
-            className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-[#090C11]/80 hover:bg-[#C79A58] text-[#F8F8F6] hover:text-[#090C11] border border-white/20 hover:border-[#C79A58] flex items-center justify-center transition-all duration-300 shadow-xl focus:outline-none"
+            className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-[#090C11]/80 hover:bg-[#C79A58] text-[#F8F8F6] hover:text-[#090C11] border border-white/20 hover:border-[#C79A58] flex items-center justify-center transition-all duration-300 shadow-xl focus:outline-none"
           >
-            <i className="bi bi-chevron-right text-xl"></i>
+            <i className="bi bi-chevron-right text-lg sm:text-xl"></i>
           </button>
 
           {/* Bottom Floating Info Bar */}
-          <div className="absolute bottom-6 left-6 right-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-[#090C11]/90 backdrop-blur-md border border-white/10 p-4">
+          <div className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 bg-[#090C11]/90 backdrop-blur-md border border-white/10 p-3 sm:p-4">
             <div>
-              <span className="text-[10px] uppercase tracking-[0.2em] font-semibold text-[#C79A58] block">
+              <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.2em] font-semibold text-[#C79A58] block">
                 EXTERIOR FINISHING & CONSTRUCTION
               </span>
-              <h3 className="font-serif text-lg text-[#F8F8F6] font-normal">
+              <h3 className="font-serif text-sm sm:text-lg text-[#F8F8F6] font-normal">
                 LLC Construction & Maintenance Project #{currentIndex + 1}
               </h3>
             </div>
 
-            <Button href="/projects" variant="outline" icon="bi-grid" className="py-2 px-4 text-xs">
+            <Button href="/projects" variant="outline" icon="bi-grid" className="py-1.5 px-3 sm:py-2 sm:px-4 text-[11px] sm:text-xs">
               View All Images in Gallery
             </Button>
           </div>

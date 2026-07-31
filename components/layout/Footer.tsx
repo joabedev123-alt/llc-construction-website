@@ -156,9 +156,9 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Copyright & Legal Links */}
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#AEB4BD]/60 font-light">
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#AEB4BD]/60 font-light text-center md:text-left">
           <p>© {currentYear} {siteConfig.legalName}. All rights reserved.</p>
-          <div className="flex items-center space-x-6">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
             <span className="hover:text-[#C79A58] transition-colors cursor-pointer">Privacy Policy</span>
             <span className="hover:text-[#C79A58] transition-colors cursor-pointer">Cookie Policy</span>
             <span className="hover:text-[#C79A58] transition-colors cursor-pointer">Terms of Service</span>
