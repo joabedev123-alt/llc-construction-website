@@ -70,7 +70,7 @@ export const Hero: React.FC = () => {
             {/* Main Editorial Image Frame */}
             <div className="relative w-full max-w-md lg:max-w-none h-[480px] sm:h-[560px] lg:h-[620px] border border-[#C79A58]/40 shadow-2xl overflow-hidden group bg-[#101620]">
               <Image
-                src="/images/hero/hero-main.jpg"
+                src="/3607c568-702f-431d-8d7e-6071962f09a7.png"
                 alt="Completed residential construction project by LLC Construction & Maintenance in Ireland"
                 fill
                 priority
