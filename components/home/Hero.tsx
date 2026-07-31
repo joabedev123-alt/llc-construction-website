@@ -68,14 +68,14 @@ export const Hero: React.FC = () => {
           <div className="lg:col-span-5 relative w-full flex justify-center lg:justify-end">
             
             {/* Main Editorial Image Frame */}
-            <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg h-[340px] sm:h-[420px] lg:h-[460px] border border-[#C79A58]/40 shadow-2xl overflow-hidden group bg-[#101620] flex items-center justify-center">
+            <div className="relative w-full max-w-[300px] sm:max-w-[350px] lg:max-w-[390px] aspect-[2/3] border border-[#C79A58]/40 shadow-2xl overflow-hidden group bg-[#101620]">
               <Image
                 src="/3607c568-702f-431d-8d7e-6071962f09a7.png"
                 alt="Completed residential construction project by LLC Construction & Maintenance in Ireland"
                 fill
                 priority
-                sizes="(max-width: 1024px) 100vw, 40vw"
-                className="object-contain p-3 transition-transform duration-1000 group-hover:scale-105"
+                sizes="(max-width: 1024px) 100vw, 390px"
+                className="object-cover transition-transform duration-1000 group-hover:scale-105"
               />
 
               {/* Geometric Corner Lines Overlay */}
