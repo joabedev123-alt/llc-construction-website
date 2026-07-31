@@ -52,10 +52,10 @@ export const ProjectLightbox: React.FC<ProjectLightboxProps> = ({
           </div>
           <div>
             <span className="text-[10px] uppercase tracking-[0.25em] text-[#C79A58] font-semibold block">
-              ACABAMENTO EXTERIOR & REAL PROJECTS
+              PROJECT GALLERY
             </span>
             <h3 className="font-serif text-lg text-[#F8F8F6] font-normal">
-              {project.title} — Photo {activeImageIndex + 1} of {images.length}
+              Photo {activeImageIndex + 1} of {images.length}
             </h3>
           </div>
         </div>

@@ -26,7 +26,7 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Main Heading */}
-            <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-normal text-[#F8F8F6] tracking-tight leading-[1.05]">
+            <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-normal text-[#F8F8F6] tracking-tight leading-[1.05]">
               Built Right.<br />
               <span className="text-[#C79A58] italic font-normal">From the Ground Up.</span>
             </h1>

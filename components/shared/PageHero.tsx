@@ -58,7 +58,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
             </span>
           </div>
 
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-[#F8F8F6] tracking-tight leading-[1.1] mb-6">
+          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-[#F8F8F6] tracking-tight leading-[1.1] mb-6">
             {title}
           </h1>
 

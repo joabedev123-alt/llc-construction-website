@@ -40,7 +40,7 @@ export const ExteriorCarouselSection: React.FC = () => {
           <SectionHeading
             eyebrow="EXTERIOR FINISHING & WORKS"
             title="Acabamento Exterior / Exterior Finishing"
-            description="Explore our complete gallery of 22 real project images showing structural masonry, rendering, plastering, slate roofing, paving and fine exterior finishes across Ireland."
+            description="Explore our complete gallery of real project images showing structural masonry, rendering, plastering, slate roofing, paving and fine exterior finishes across Ireland."
           />
 
           {/* Autoplay Toggle Controls */}
@@ -120,7 +120,7 @@ export const ExteriorCarouselSection: React.FC = () => {
             </div>
 
             <Button href="/projects" variant="outline" icon="bi-grid" className="py-2 px-4 text-xs">
-              View All 22 Images in Gallery
+              View All Images in Gallery
             </Button>
           </div>
         </div>
