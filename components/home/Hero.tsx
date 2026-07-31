@@ -68,41 +68,21 @@ export const Hero: React.FC = () => {
           <div className="lg:col-span-5 relative w-full flex justify-center lg:justify-end">
             
             {/* Main Editorial Image Frame */}
-            <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg h-[340px] sm:h-[420px] lg:h-[460px] border border-[#C79A58]/40 shadow-2xl overflow-hidden group bg-[#101620]">
+            <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg h-[340px] sm:h-[420px] lg:h-[460px] border border-[#C79A58]/40 shadow-2xl overflow-hidden group bg-[#101620] flex items-center justify-center">
               <Image
                 src="/3607c568-702f-431d-8d7e-6071962f09a7.png"
                 alt="Completed residential construction project by LLC Construction & Maintenance in Ireland"
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 40vw"
-                className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                className="object-contain p-3 transition-transform duration-1000 group-hover:scale-105"
               />
-              
-              {/* Subtle Dark Overlay Gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#090C11] via-transparent to-transparent opacity-70"></div>
-
-              {/* Floating Architectural Badge */}
-              <div className="absolute bottom-6 left-6 right-6 bg-[#090C11]/90 backdrop-blur-md border border-[#C79A58]/40 p-4 shadow-xl">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <span className="text-[10px] uppercase tracking-[0.25em] font-semibold text-[#C79A58] block">
-                      COMPLETE CONSTRUCTION
-                    </span>
-                    <span className="text-xs sm:text-sm text-[#F8F8F6] font-medium">
-                      From foundation to final finish
-                    </span>
-                  </div>
-                  <div className="w-8 h-8 rounded-full border border-[#C79A58] flex items-center justify-center text-[#C79A58]">
-                    <i className="bi bi-building text-sm"></i>
-                  </div>
-                </div>
-              </div>
 
               {/* Geometric Corner Lines Overlay */}
-              <div className="absolute top-4 left-4 w-6 h-6 border-t-2 border-l-2 border-[#C79A58]"></div>
-              <div className="absolute top-4 right-4 w-6 h-6 border-t-2 border-r-2 border-[#C79A58]"></div>
-              <div className="absolute bottom-4 left-4 w-6 h-6 border-b-2 border-l-2 border-[#C79A58]"></div>
-              <div className="absolute bottom-4 right-4 w-6 h-6 border-b-2 border-r-2 border-[#C79A58]"></div>
+              <div className="absolute top-4 left-4 w-6 h-6 border-t-2 border-l-2 border-[#C79A58] pointer-events-none"></div>
+              <div className="absolute top-4 right-4 w-6 h-6 border-t-2 border-r-2 border-[#C79A58] pointer-events-none"></div>
+              <div className="absolute bottom-4 left-4 w-6 h-6 border-b-2 border-l-2 border-[#C79A58] pointer-events-none"></div>
+              <div className="absolute bottom-4 right-4 w-6 h-6 border-b-2 border-r-2 border-[#C79A58] pointer-events-none"></div>
             </div>
 
             {/* Additional Architectural Accent Line Behind Frame */}
